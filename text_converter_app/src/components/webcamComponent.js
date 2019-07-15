@@ -53,7 +53,7 @@ class webcamComponent extends React.Component {
             if (response.ok) {
                 response.json().then(data => {
                     if (data.regions.length > 0) {
-                        if (global.scannedTextState == false) {
+                        if (global.scannedTextState === false) {
                             global.scannedText = '';
                             global.scannedTextState = true;
                         } else {

@@ -5,6 +5,7 @@ import WebcamComponent from './components/webcamComponent'
 import AboutComponent from './components/aboutComponent'
 import DisplayText from './components/displayText'
 import MenuComponent from './components/menuComponent'
+import DownloadedComponent from './components/downloadedComponent'
 
 
 class App extends Component {
@@ -51,7 +52,7 @@ class App extends Component {
                         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
                         <title>Scan Text - Notes Converter</title>
                     </MetaTags>
-                    <MenuComponent ref={this.menu_ref} changeScreen={this.changeScreen} />
+                    <MenuComponent ref={this.menu_ref} onBlur={this.closeMenu} changeScreen={this.changeScreen} />
                     <div className="webcamContainer" visibility="visible" >
                         <WebcamComponent />
                     </div>
@@ -65,9 +66,21 @@ class App extends Component {
                         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
                         <title>About - Notes Converter</title>
                     </MetaTags>
-                    <MenuComponent ref={this.menu_ref} changeScreen={this.changeScreen} />
+                    <MenuComponent ref={this.menu_ref} onBlur={this.closeMenu} changeScreen={this.changeScreen} />
                     <AboutComponent />
                 </div>
+            );
+        }
+        else if (screen === 3) {
+            return (
+                <div >
+                    <MetaTags>
+                        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+                        <title>Export Text - Notes Converter</title>
+                    </MetaTags>
+                    <MenuComponent ref={this.menu_ref} onBlur={this.closeMenu} changeScreen={this.changeScreen} />
+                    <DownloadedComponent/>
+                </div >
             );
         }
     }

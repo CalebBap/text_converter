@@ -35,6 +35,7 @@ class menuComponent extends React.Component {
                     <img ref={this.cross_button_ref} className="crossImage" src={crossButton} onClick={this.showHamButton} alt="" />
                     <p className="menuText" id="menuOne" onClick={() => this.props.changeScreen(1)}>Scan Text</p>
                     <p className="menuText" onClick={() => this.props.changeScreen(0)}>View Text</p>
+                    <p className="menuText" onClick={() => this.props.changeScreen(3)}>Export Text</p>
                     <p className="menuText" onClick={() => this.props.changeScreen(2)}>About</p>
                 </div>
             </div>

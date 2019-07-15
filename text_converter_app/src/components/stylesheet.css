@@ -128,3 +128,22 @@ body{
     text-align:center;
     width: 100vw;
 }
+
+.dlImage{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 50%;
+    left: 50%;
+    margin-left: -10vw;
+    margin-top: -15vw;
+}
+
+.dlText {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-top: 31vw;
+    width: 100%;
+    text-align:center;
+}
