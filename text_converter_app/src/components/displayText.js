@@ -25,7 +25,6 @@ class displayText extends React.Component {
             textContent = textContent.replace(new RegExp("<div>", "g"), '\n');
 
             global.scannedText = textContent;
-            global.scannedTextState = true;
         }
         if (textNode.textContent === "") {
             global.scannedText = "Open the menu to scan and add some text...";

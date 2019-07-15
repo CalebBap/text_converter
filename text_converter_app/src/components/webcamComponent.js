@@ -53,9 +53,8 @@ class webcamComponent extends React.Component {
             if (response.ok) {
                 response.json().then(data => {
                     if (data.regions.length > 0) {
-                        if (global.scannedTextState === false) {
+                        if (global.scannedText === "Open the menu to scan and add some text...") {
                             global.scannedText = '';
-                            global.scannedTextState = true;
                         } else {
                             global.scannedText += '\n';
                         }

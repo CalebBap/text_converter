@@ -121,12 +121,17 @@ body{
 }
 
 .aboutText {
+    /*text-align:center;
+    width: 100vw;*/
     position: absolute;
     margin-top: 50vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    text-align:center;
-    width: 100vw;
+    left: 5%;
+}
+
+li{
+    padding-bottom: 2.5vh;
 }
 
 .dlImage{
