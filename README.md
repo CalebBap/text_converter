@@ -10,7 +10,7 @@ This React app uses your device's camera to scan handwritten or printed text (e.
 1. Clone or download the repository
 2. In Command Prompt, navigate to the directory in which the repository has been cloned/downloaded
 3. Run the following command `npm install`
-4. Next, run the app by executing the command `npm install`
+4. Next, run the app by executing the command `npm start`
 
 ### Usage
 To use this app:
